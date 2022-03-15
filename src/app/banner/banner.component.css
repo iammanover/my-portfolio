@@ -1,0 +1,45 @@
+.second {
+  background: var(--gradient);
+}
+.second:hover {
+  background: var(--bg-white);
+  border: 1px solid var(--secondary-text);
+}
+.first {
+  background: var(--bg-white);
+  border: 1px solid var(--secondary-text);
+}
+.first:hover {
+  background: var(--gradient);
+}
+a {
+  text-decoration: none;
+}
+.banner {
+  padding-top: 6.875rem;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+.banner .banner-content {
+  vertical-align: middle;
+  align-self: center;
+}
+.banner .banner-content h2::after {
+  content: "";
+  width: 60%;
+  height: 0.125rem;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  background: var(--bg-black);
+  overflow: hidden;
+}
+@media (max-width: 390px) {
+
+  /* top banner */
+  .banner_wrapper .banner-content h2::after {
+      left: 34%;
+  }
+}

@@ -1,1 +1,174 @@
-/* You can add global styles to this file, and also import other style files */
+/* google font link */
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+/*global css  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Background color */
+  --primary-color: #4458dc;
+  --secondary-color: #854fee;
+  --bg-white: #fff;
+  --bg-light: #faf8ff;
+  --bg-black: #000;
+  --bg-gray: #eee;
+  --gradient: linear-gradient(to right, #4458dc 100%, #854fee 100%),
+    radial-gradient(circle at top left, #4458dc, #854fee);
+
+  /* Text Color */
+  --primary-text: #4458dc;
+  --secondary-text: #854fee;
+  --text-white: #fff;
+  --text-black: #000;
+  --text-gray: #777;
+
+  /* Font Family */
+  --primary-font: "Rubik", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+}
+
+body {
+  font-family: var(--secondary-font);
+  width: 100%;
+  /* background-image: url('portfolio\src\assets\images\body-bg.png'); */
+  background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-gray);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+section {
+  padding: 80px 0;
+}
+.main-btn {
+  display: inline-block;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 2.875rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: uppercase;
+  border-radius: 0.3124rem;
+  box-shadow: 0 10px 30px rgba(40, 37, 209, 0.3);
+  border: 18px transparent;
+  padding: 0 42px;
+  transition: all 0.3s ease-in-out;
+  --webkit-transition: all 0.3s ease-in-out;
+}
+.primary-btn {
+  background-image: var(--gradient);
+  color: var(--text-white);
+}
+
+.primary-btn:hover {
+  border-color: var(--secondary-color);
+  background: var(--bg-white);
+  color: var(--secondary-text);
+  box-shadow: none;
+}
+
+.secondary-btn {
+  background-image: var(--gradient);
+  color: var(--secondary-text);
+  border-color: var(--secondary-color);
+}
+.secondary-btn:hover {
+  background: var(--gradient);
+  color: var(--text-white);
+  box-shadow: none;
+}
+h1 {
+  font-size: 4.375rem;
+  line-height: 3.75rem;
+  font-weight: 700;
+  color: var(--text-black);
+  margin-bottom: 1.25rem;
+  font-family: var(--primary-font);
+}
+h2 {
+  font-size: 2.5rem;
+  line-height: 3.4375rem;
+  font-weight: 500;
+  color: var(--text-black);
+  margin-bottom: 1.5625rem;
+  font-family: var(--primary-font);
+}
+h3 {
+  font-size: 2.25rem;
+  line-height: 3.125rem;
+  font-weight: 700;
+  color: var(--text-black);
+  margin-bottom: 0.9375rem;
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+}
+h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-black);
+  margin-bottom: 2.1875rem;
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+}
+
+p {
+  color: var(--text-gray);
+  font-size: 00.9375rem;
+  line-height: 1.625rem;
+  font-weight: 400;
+}
+.active{
+  color: var(--secondary-text);
+}
+
+/* media query */
+@media (max-width: 1199.5px) {
+  /* custom css */
+  h1 {
+    font-size: 3.75rem;
+  }
+  h2 {
+    font-size: 2.1875rem;
+  }
+  h3 {
+    font-size: 1.875rem;
+    line-height: 2.6875rem;
+  }
+  h5 {
+    font-size: 1.0625rem;
+  }
+}
+
+@media (max-width: 767px) {
+  /* custom css */
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+  }
+  h3 {
+    font-size: 1.5625rem;
+    line-height: 2.1875rem;
+  }
+
+  /* about */
+}
+
